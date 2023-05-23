@@ -8,4 +8,14 @@ public class HomeController : Controller
     {
         return View();
     }
+
+    public IActionResult Tutorial(){
+        return View();
+    }
+    public IActionResult Comenzar(){
+        return View();
+    }
+    public IActionResult Habitacion(){
+        return View();
+    }
 }
