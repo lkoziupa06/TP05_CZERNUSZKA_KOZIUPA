@@ -7,7 +7,7 @@ namespace TP05_CZERNUSZKA_KOZIUPA.Models;
 
 public static class Escape{
     private static string[] incognitasSalas {get; set;} = new string [4];
-    private static int estadoJuego {get;set;} = 0;
+    private static int estadoJuego {get;set;} = 1;
     private static void inicializarJuego(){
         incognitasSalas[0] = "";
         incognitasSalas[1] = "";
@@ -19,7 +19,7 @@ public static class Escape{
     }
     public static bool ResolverSala(int sala, string incognita){
         bool esCorrecta = false;
-        if(sala == estadoJuego++){
+        if(sala == estadoJuego){
             if(incognitasSalas[0] == null) inicializarJuego();
             if(incognitasSalas[sala--] == incognita){
                 esCorrecta = true;
