@@ -14,7 +14,7 @@ public static class Escape{
         incognitasSalas[2] = "";
         incognitasSalas[3] = "";
     }
-    private static int GetEstadoJuego(){
+    public static int GetEstadoJuego(){
         return estadoJuego;
     }
     public static bool ResolverSala(int sala, string incognita){
